@@ -1,6 +1,47 @@
-#cabecalhofixo{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
 }
+body{
+    height: 10000px;
+    background-image: linear-gradient( rgb(2, 2, 22), rgb(26, 1, 98), rgb(2, 2, 22));
+}
+#cabecalhofixo{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 100%;
+}
+#ulPaginas{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.liPaginas{
+    padding: 0px;
+    margin: 50px;
+    border-bottom: 2px solid #cccccc; 
+    text-align: center; 
+
+}
+.liPaginas a{
+    text-decoration: none;
+    color: white;
+}
+.liPaginasimg{
+    padding: 0px;
+    margin: 50px;
+    text-align: center; 
+    margin-top: 20px;
+    
+}
+#nome{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+
