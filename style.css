@@ -9,7 +9,6 @@ body {
     rgb(26, 1, 98),
     rgb(2, 2, 22)
   );
-
 }
 #cabecalhofixo {
   position: sticky;
@@ -18,7 +17,7 @@ body {
   height: 120px;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 100%;
-
+  z-index: 99;
 }
 #ulPaginas {
   color: white;
@@ -49,6 +48,46 @@ body {
   display: flex;
   justify-content: center;
 }
-#nome{
+#inicioElements {
+  height: 700px;
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#txtInicio {
   color: white;
+}
+#ola {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 3px;
+}
+#gustavo {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #ad00ff;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 3px;
+}
+#proficao {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 566;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 72px;
+  letter-spacing: 3px;
+}
+#foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
