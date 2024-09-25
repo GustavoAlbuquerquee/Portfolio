@@ -9,6 +9,7 @@ body {
     rgb(26, 1, 98),
     rgb(2, 2, 22)
   );
+
 }
 #cabecalhofixo {
   position: sticky;
@@ -17,7 +18,7 @@ body {
   height: 120px;
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 100%;
-  min-width: 1400px;
+
 }
 #ulPaginas {
   color: white;
@@ -42,8 +43,12 @@ body {
   text-align: center;
   margin-top: 20px;
 }
-#nome {
-  height: 30px;
-  width: 30px;
-  background-color: red;
+#inicio {
+  height: 991px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#nome{
+  color: white;
 }
