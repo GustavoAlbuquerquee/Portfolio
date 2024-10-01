@@ -91,3 +91,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width:1000px){
+  body{
+    flex-direction: row;
+    text-align: center;
+
+    display: flex;
+  }
+  img {
+    display: none;
+    max-width: 700px;
+  }
+  #ulPaginas{
+    font-size: 10px;
+    display: block;
+    align-items: center;
+  }
+
+  #cabecalhofixo{
+    height: auto;
+    width: 100px;
+  }
+  
+}
