@@ -77,7 +77,7 @@ body {
   line-height: 72px;
   letter-spacing: 3px;
 }
-#proficao {
+#digitando {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 566;
@@ -91,11 +91,37 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width:1000px){
+
+#digitando {
+  color: #FFF;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 1px;
+}
+
+#digitando::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+}
+
+@media only screen and (max-width:1200px){
   body{
     flex-direction: row;
     text-align: center;
-
     display: flex;
   }
   img {
@@ -103,14 +129,26 @@ body {
     max-width: 700px;
   }
   #ulPaginas{
-    font-size: 10px;
     display: block;
-    align-items: center;
+    margin: -30px;
+    font-size: 8px;
+  }
+  #ola{
+    font-size: 20px;
+  }
+  #gustavo{
+    font-size: 30px;
+  }
+  #proficao{
+    font-size: 20px;
+  }
+  #listaTitulos{
+  position: sticky;
   }
 
   #cabecalhofixo{
-    height: auto;
     width: 100px;
+    height: 876px;
   }
   
 }
