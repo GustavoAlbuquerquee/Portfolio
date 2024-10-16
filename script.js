@@ -1,14 +1,11 @@
-// document.getElementsByClassName('liPaginas').addEventListener('click', function() {
-//     document.getElementById('nome').scrollIntoView({ behavior: 'smooth' });
-// });
 
 var i = 0;
 var i2 = 0;
-var txt = 'Desenvolvedor Front End'; /* The text */
-var txt2 = 'GUSTAVO ALBQUERQUE'; /* The text */
+var txt = 'Desenvolvedor Front End'; 
+var txt2 = 'GUSTAVO ALBQUERQUE'; 
 var txt3 = 'OLÁ, EU SOU'
 
-var speed = 100; /* The speed/duration of the effect in milliseconds */
+var speed = 100; 
 
 function typeWriter() {
   if (i < txt.length) {
@@ -19,3 +16,27 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('.liPaginas a');
+
+  links.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          // Verifica se o link é o "INICIO"
+          if (link.textContent.trim() === 'INICIO') {
+              event.preventDefault(); // Previne o comportamento padrão
+
+              var target = document.getElementById('pagsobremim');
+              if (target) {
+                  var offset = 120; // Ajuste conforme necessário
+                  var targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+
+                  window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                  });
+              }
+          }
+      });
+  });
+});
