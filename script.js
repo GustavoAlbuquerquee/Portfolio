@@ -40,3 +40,35 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+let index = 0;
+const totalImagens = 5; // Total de imagens disponíveis
+const totalVisiveis = 3; // Número de imagens visíveis
+
+function mostrarImagem() {
+    const imagens = document.querySelector('.imagens');
+    
+    // Faz a transição circular
+    imagens.style.transform = `translateX(${-index * (100 / totalVisiveis)}%)`;
+}
+
+function mudarImagem(direcao) {
+    index += direcao;
+    
+    // Lógica para fazer o carrossel infinito
+    if (index > totalImagens - totalVisiveis) {
+        index = 0; // Retorna para o início
+    } else if (index < 0) {
+        index = totalImagens - totalVisiveis; // Volta para o final
+    }
+    
+    mostrarImagem();
+}
+
+// Exibir as imagens inicialmente
+mostrarImagem();
+
+// Mudar automaticamente a imagem a cada 3 segundos
+setInterval(() => {
+    mudarImagem(1); // Muda para a próxima imagem
+}, 3000); // Tempo em milissegundos
