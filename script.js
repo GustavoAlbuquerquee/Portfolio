@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   links.forEach(function(link) {
       link.addEventListener('click', function(event) {
-          // Verifica se o link é o "INICIO"
+      
           if (link.textContent.trim() === 'INICIO') {
-              event.preventDefault(); // Previne o comportamento padrão
+              event.preventDefault(); 
 
               var target = document.getElementById('pagsobremim');
               if (target) {
-                  var offset = 120; // Ajuste conforme necessário
+                  var offset = 120; 
                   var targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
 
                   window.scrollTo({
@@ -42,33 +42,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 let index = 0;
-const totalImagens = 5; // Total de imagens disponíveis
-const totalVisiveis = 3; // Número de imagens visíveis
+const totalImagens = 5;
+const totalVisiveis = 3; 
 
 function mostrarImagem() {
     const imagens = document.querySelector('.imagens');
     
-    // Faz a transição circular
+   
     imagens.style.transform = `translateX(${-index * (100 / totalVisiveis)}%)`;
 }
 
 function mudarImagem(direcao) {
     index += direcao;
     
-    // Lógica para fazer o carrossel infinito
+    
     if (index > totalImagens - totalVisiveis) {
-        index = 0; // Retorna para o início
+        index = 0; 
     } else if (index < 0) {
-        index = totalImagens - totalVisiveis; // Volta para o final
+        index = totalImagens - totalVisiveis; 
     }
     
     mostrarImagem();
 }
 
-// Exibir as imagens inicialmente
 mostrarImagem();
 
-// Mudar automaticamente a imagem a cada 3 segundos
+
 setInterval(() => {
-    mudarImagem(1); // Muda para a próxima imagem
-}, 3000); // Tempo em milissegundos
+    mudarImagem(1); 
+}, 3000); 

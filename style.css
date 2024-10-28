@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  height: 10000px;
+  height: 2000px;
   background-image: linear-gradient(
     rgb(2, 2, 22),
     rgb(26, 1, 98),
@@ -154,8 +154,7 @@ body {
 #experiencia{
   width: 100%;
   height: 800px;
-  background-color: #00ff40;
-  text-align: center;
+    text-align: center;
   justify-content: center;
 }
 #ulhabilidades{
@@ -174,6 +173,8 @@ body {
  color: #ffffff;
  display: flex;
  margin-bottom: 10px;
+ align-items: center;
+ gap:10px;
 }
 #listahabilidades1{
  display: flex;
@@ -239,7 +240,7 @@ flex-direction: column;
     align-items: center;
     color: #ffffff;
     flex-direction: column;
-  gap: 5px;
+    gap: 10px;
   margin-top: 40px;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -264,17 +265,17 @@ flex-direction: column;
   font-weight: 100;
 }
 #tragetoriabox1{
-  background-color: #020216;
+  background-color: #1327d8;
   width: 700px;
   height: 170px;
 }
 #tragetoriabox2{
-  background-color: #0C145B;
+  background-color: #1827af;
   width: 700px;
   height: 170px;
 }
 #tragetoriabox3{
-  background-color: #1A0162;
+  background-color: #25038b;
   width: 700px;
   height: 170px;
 }
@@ -283,7 +284,6 @@ flex-direction: column;
   height: 700px;
   text-align: center;
   justify-content: center;
-  background-color: #f6e000;
 }
 
 .carrossel {
@@ -326,6 +326,68 @@ button {
 
 .next {
   right: 10px;
+}
+#pagcadastro{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+#duasdiv{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#formulario{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+.tituloforms{
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  font-size: 20px;
+
+}
+svg{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#txtareamensagem{
+  width: 302px;
+  resize: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+input{
+  width: 300px;
+}
+#informacoes{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+
+.tituloinfo{
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #999999;
+}
+.subtituloinfo{
+  color: #ffffff;
+  opacity: 50%;
 }
 
 @keyframes blink {
