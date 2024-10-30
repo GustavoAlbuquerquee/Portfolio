@@ -227,9 +227,9 @@ flex-direction: column;
   display: flex;
   flex-direction: row-reverse;
 }
-#trintacinco{
+#cinquenta{
   width: 500px;
-  background: linear-gradient(to right, #0075F6 35%, #F0F0F0);
+  background: linear-gradient(to right, #0075F6 50%, #F0F0F0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
@@ -337,6 +337,8 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  gap: 70px;
+  margin-top: 40px;
 }
 #formulario{
   display: flex;
@@ -351,7 +353,8 @@ button {
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 25px;
 
 }
 svg{
@@ -360,7 +363,9 @@ svg{
   display: flex;
 }
 #txtareamensagem{
-  width: 302px;
+  background-color: #333333;
+  border: none;
+  width: 500px;
   resize: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -371,12 +376,12 @@ input{
   width: 300px;
 }
 #informacoes{
-  width: 200px;
+  width: 250px;
   height: 200px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 15px;
+
 }
 
 .tituloinfo{
@@ -384,11 +389,22 @@ input{
   font-weight: 600;
   font-style: normal;
   color: #999999;
+  margin-top: 15px;
+  font-size: 18px;
 }
 .subtituloinfo{
   color: #ffffff;
   opacity: 50%;
+  font-size: 18px;
+  margin-top: 3px;
 }
+input{
+  background-color: #333333;
+  border: none;
+  height: 40px;
+  width: 500px;
+}
+
 
 @keyframes blink {
 
