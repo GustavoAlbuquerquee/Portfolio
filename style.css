@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  height: 2000px;
+  padding-bottom: 100px;
   background-image: linear-gradient(
     rgb(2, 2, 22),
     rgb(26, 1, 98),
@@ -93,26 +93,26 @@ body {
 }
 
 #digitando {
-  color: #FFF;
+  color: #fff;
   font-family: "Karla", sans-serif;
   letter-spacing: 1px;
 }
 
 #digitando::after {
-  content: '|';
+  content: "|";
   opacity: 1;
   margin-left: 5px;
   display: inline-block;
-  animation: blink .7s infinite;
+  animation: blink 0.7s infinite;
 }
-#pagsobremim{
+#pagsobremim {
   width: 100%;
   height: 633px;
   text-align: center;
   justify-content: center;
 }
 
-.subt{
+.subt {
   color: #999999;
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
@@ -122,42 +122,40 @@ body {
   line-height: 18px;
   letter-spacing: 5px;
 }
-.titulo{
+.titulo {
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-style: normal ;
+  font-style: normal;
   color: #fff;
   line-height: 1.5;
   font-size: 40px;
   letter-spacing: 5px;
 }
-.txtsobremim{
-  color: #FFF;
+.txtsobremim {
+  color: #fff;
   line-height: 27px;
   font-size: 25px;
   font-family: "Quicksand", sans-serif;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  
-
 }
-.txtsobremim p{
+.txtsobremim p {
   margin-bottom: 40px;
 }
-#paghabilidades{
+#paghabilidades {
   width: 100%;
   height: 500px;
   text-align: center;
   justify-content: center;
 }
-#experiencia{
+#experiencia {
   width: 100%;
   height: 800px;
-    text-align: center;
+  text-align: center;
   justify-content: center;
 }
-#ulhabilidades{
+#ulhabilidades {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -166,96 +164,94 @@ body {
 
   font-style: normal;
 }
-#habilidade{
+#habilidade {
   display: flex;
 }
 .especialidade {
- color: #ffffff;
- display: flex;
- margin-bottom: 10px;
- align-items: center;
- gap:10px;
-}
-#listahabilidades1{
- display: flex;
-gap: 20px;
-flex-direction: column; 
-}
-
-#listahabilidades2{
+  color: #ffffff;
   display: flex;
- gap: 20px;
- flex-direction: column; 
- }
- 
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+}
+#listahabilidades1 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
 
+#listahabilidades2 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
 
-#setenta{
+#setenta {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 70%, #F0F0F0);
-  background-color: #0075F6; 
+  background: linear-gradient(to right, #0075f6 70%, #f0f0f0);
+  background-color: #0075f6;
 
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#novenove{
+#novenove {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 99%, #F0F0F0);
+  background: linear-gradient(to right, #0075f6 99%, #f0f0f0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#trinta{
+#trinta {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 30%, #F0F0F0);
+  background: linear-gradient(to right, #0075f6 30%, #f0f0f0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#secenta{
+#secenta {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 60%, #F0F0F0);
+  background: linear-gradient(to right, #0075f6 60%, #f0f0f0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#oitocinco{
+#oitocinco {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 85%, #F0F0F0);
+  background: linear-gradient(to right, #0075f6 85%, #f0f0f0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#trintacinco{
+#trintacinco {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 35%, #F0F0F0);
+  background: linear-gradient(to right, #0075f6 35%, #f0f0f0);
   border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
-#tragetoria{
+#tragetoria {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    flex-direction: column;
-    gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 40px;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-.ano{
- opacity: 40%;
+.ano {
+  opacity: 40%;
 }
-#linha1{
- display: flex;
- align-items: center;
- margin: 15px;
- gap: 15px;
+#linha1 {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  gap: 15px;
 }
-.desctragetoria{
+.desctragetoria {
   opacity: 70%;
   margin: 15px;
   display: flex;
@@ -264,22 +260,22 @@ flex-direction: column;
   line-height: 20px;
   font-weight: 100;
 }
-#tragetoriabox1{
+#tragetoriabox1 {
   background-color: #1327d8;
   width: 700px;
   height: 170px;
 }
-#tragetoriabox2{
+#tragetoriabox2 {
   background-color: #1827af;
   width: 700px;
   height: 170px;
 }
-#tragetoriabox3{
+#tragetoriabox3 {
   background-color: #25038b;
   width: 700px;
   height: 170px;
 }
-#pagmeusprojetos{
+#pagmeusprojetos {
   width: 100%;
   height: 700px;
   text-align: center;
@@ -289,7 +285,7 @@ flex-direction: column;
 .carrossel {
   position: relative;
   width: 1600px;
-  height: 300px; 
+  height: 300px;
   margin: auto;
   overflow: hidden;
   margin-top: 40px;
@@ -298,13 +294,13 @@ flex-direction: column;
 .imagens {
   display: flex;
   transition: transform 0.5s ease;
-  height: 100%; 
+  height: 100%;
   gap: 10px;
 }
 
 .imagens img {
   max-width: 33.33%;
-  height: auto; 
+  height: auto;
   max-height: 100%;
   object-fit: cover;
 }
@@ -317,7 +313,7 @@ button {
   border: none;
   padding: 10px;
   cursor: pointer;
-  font-size: 24px; 
+  font-size: 24px;
 }
 
 .prev {
@@ -327,24 +323,24 @@ button {
 .next {
   right: 10px;
 }
-#pagcadastro{
+#pagcadastro {
   width: 100%;
   height: 100%;
   text-align: center;
   justify-content: center;
 }
-#duasdiv{
+#duasdiv {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-#formulario{
+#formulario {
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 15px;
 }
-.tituloforms{
+.tituloforms {
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -352,25 +348,23 @@ button {
   font-style: normal;
   line-height: 18px;
   font-size: 20px;
-
 }
-svg{
+svg {
   align-items: center;
   justify-content: center;
   display: flex;
 }
-#txtareamensagem{
+#txtareamensagem {
   width: 302px;
   resize: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-style: normal;
-
 }
-input{
+input {
   width: 300px;
 }
-#informacoes{
+#informacoes {
   width: 200px;
   height: 200px;
   display: flex;
@@ -379,31 +373,62 @@ input{
   gap: 15px;
 }
 
-.tituloinfo{
+.tituloinfo {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-style: normal;
   color: #999999;
 }
-.subtituloinfo{
+.subtituloinfo {
   color: #ffffff;
   opacity: 50%;
 }
+#redessociais {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.redesocial {
+  background-color: #333333;
+  border-radius: 30px;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+#Copyrighttxt {
+  width: 500px;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 50%;
+  padding: 20px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#Copyrightbox {
+  width: 100%;
+}
 
 @keyframes blink {
-
   0%,
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
-@media only screen and (max-width:1200px){
-  body{
+@media only screen and (max-width: 1200px) {
+  body {
     flex-direction: row;
     text-align: center;
     display: flex;
@@ -412,27 +437,26 @@ input{
     display: none;
     max-width: 700px;
   }
-  #ulPaginas{
+  #ulPaginas {
     display: block;
     margin: -30px;
     font-size: 8px;
   }
-  #ola{
+  #ola {
     font-size: 20px;
   }
-  #gustavo{
+  #gustavo {
     font-size: 30px;
   }
-  #proficao{
+  #proficao {
     font-size: 20px;
   }
-  #listaTitulos{
-  position: sticky;
+  #listaTitulos {
+    position: sticky;
   }
 
-  #cabecalhofixo{
+  #cabecalhofixo {
     width: 100px;
     height: 876px;
   }
-  
 }
