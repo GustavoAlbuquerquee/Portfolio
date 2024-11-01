@@ -223,10 +223,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-#trintacinco {
+#cinquenta {
   width: 500px;
-  background: linear-gradient(to right, #0075f6 35%, #f0f0f0);
-  border-radius: 4px;
+  background: linear-gradient(to right, #0075F6 50%, #F0F0F0);  border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -349,7 +348,8 @@ button {
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  font-size: 20px;
+  font-size: 25px;
+  margin-bottom: 25px;  
 }
 svg {
   align-items: center;
@@ -357,17 +357,26 @@ svg {
   display: flex;
 }
 #txtareamensagem {
-  width: 302px;
+  background-color: #333333;
+  border: none;
+  width: 500px;
   resize: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-style: normal;
+  outline: 0;
+  color: white;
+  padding-left:10px ;
+  padding-top: 10px;
 }
 input {
   width: 300px;
+  outline: 0;
+  color: white;
+  padding-left:10px ;
 }
 #informacoes {
-  width: 200px;
+  width: 250px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -389,6 +398,12 @@ input {
   font-size: 18px;
   margin-top: 3px;
 }
+input{
+  background-color: #333333;
+  border: none;
+  height: 40px;
+  width: 500px;
+}
 #redessociais {
   display: flex;
   gap: 20px;
@@ -407,21 +422,33 @@ input {
   align-items: center;
 }
 #Copyrighttxt {
+  width: 500px;
   font-size: 20px;
   color: #ffffff;
   opacity: 50%;
   padding: 20px;
+  border-top: solid 1px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, -50%);
+}
+#Copyrighttxt::before{
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  color: #ffffff;
+  top: 20px;
+  z-index: 9999999;
 }
 #Copyrightbox {
   width: 100%;
-}
-#linhabranca {
-  background-color: #ffffff;
-  height: 1px;
+  position: relative;
 }
 
 @keyframes blink {
