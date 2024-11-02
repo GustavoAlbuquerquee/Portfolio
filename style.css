@@ -225,7 +225,8 @@ body {
 }
 #cinquenta {
   width: 500px;
-  background: linear-gradient(to right, #0075F6 50%, #F0F0F0);  border-radius: 4px;
+  background: linear-gradient(to right, #0075f6 50%, #f0f0f0);
+  border-radius: 4px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -349,7 +350,7 @@ button {
   font-style: normal;
   line-height: 18px;
   font-size: 25px;
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 svg {
   align-items: center;
@@ -366,14 +367,14 @@ svg {
   font-style: normal;
   outline: 0;
   color: white;
-  padding-left:10px ;
+  padding-left: 10px;
   padding-top: 10px;
 }
 input {
   width: 300px;
   outline: 0;
   color: white;
-  padding-left:10px ;
+  padding-left: 10px;
 }
 #informacoes {
   width: 250px;
@@ -381,7 +382,6 @@ input {
   display: flex;
   flex-direction: column;
   text-align: left;
-
 }
 
 .tituloinfo {
@@ -398,7 +398,7 @@ input {
   font-size: 18px;
   margin-top: 3px;
 }
-input{
+input {
   background-color: #333333;
   border: none;
   height: 40px;
@@ -437,7 +437,7 @@ input{
   top: 20px;
   transform: translate(-50%, -50%);
 }
-#Copyrighttxt::before{
+#Copyrighttxt::before {
   content: "";
   position: absolute;
   width: 500px;
@@ -462,36 +462,119 @@ input{
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  body {
-    flex-direction: row;
-    text-align: center;
-    display: flex;
+@media only screen and (max-width: 1000px) {
+  #cabecalhofixo {
+    height: auto;
+    padding: 10px 0;
   }
-  img {
-    display: none;
-    max-width: 700px;
+  #inicio {
+    height: 600px;
   }
-  #ulPaginas {
-    display: block;
-    margin: -30px;
-    font-size: 8px;
+  #tragetoriabox1 {
+    width: 530px;
   }
-  #ola {
-    font-size: 20px;
+  #tragetoriabox2 {
+    width: 530px;
   }
-  #gustavo {
-    font-size: 30px;
-  }
-  #proficao {
-    font-size: 20px;
-  }
-  #listaTitulos {
-    position: sticky;
+  #tragetoriabox3 {
+    width: 530px;
   }
 
-  #cabecalhofixo {
-    width: 100px;
-    height: 876px;
+  #ulPaginas {
+    font-size: 19px;
+  }
+
+  .liPaginasimg {
+    display: none;
+  }
+  #foto {
+    display: none;
+  }
+  .liPaginas {
+    margin: 10px;
+  }
+
+  #inicioElements {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #ola {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  #gustavo {
+    font-size: 36px;
+  }
+
+  #digitando {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .subt {
+    font-size: 16px;
+  }
+
+  .txtsobremim,
+  .desctragetoria {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  #ulhabilidades {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #listahabilidades1,
+  #listahabilidades2 {
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+  }
+
+  #setenta,
+  #novenove,
+  #trinta,
+  #secenta,
+  #oitocinco,
+  #cinquenta {
+    width: 100%;
+  }
+
+  #formulario {
+    width: 90%;
+    margin: auto;
+  }
+  .carrossel {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  #txtareamensagem,
+  input {
+    width: 100%;
+  }
+
+  #redessociais {
+    gap: 10px;
+  }
+
+  #Copyrighttxt {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
   }
 }
